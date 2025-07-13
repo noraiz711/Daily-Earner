@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Daily Earner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-color: #00c853;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 3px solid #00a94d;
+    }
+
+    .wallet {
+      background: #ffffff;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .wallet h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #555;
+    }
+
+    .wallet .balance {
+      font-size: 28px;
+      font-weight: bold;
+      color: #00c853;
+      margin-top: 10px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .menu a {
+      display: block;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background: #e0f7ea;
+    }
+
+    .menu a span {
+      display: block;
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    .logout, .whatsapp {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .logout a {
+      background: #f44336;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .logout a:hover {
+      background: #d32f2f;
+    }
+
+    .whatsapp a {
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .whatsapp a:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">👤 Daily Earner Dashboard</div>
+
+  <div class="wallet">
+    <h2>Your Wallet Balance</h2>
+    <div class="balance">PKR 0</div> <!-- Update with JS later -->
+  </div>
+
+  <div class="menu">
+    <a href="watch-ads.html">
+      📺
+      <span>Watch Ads</span>
+    </a>
+    <a href="withdraw.html">
+      💸
+      <span>Withdraw</span>
+    </a>
+    <a href="deposit.html">
+      💳
+      <span>Deposit</span>
+    </a>
+    <a href="packages.html">
+      📦
+      <span>Package List</span>
+    </a>
+    <a href="invite.html">
+      🤝
+      <span>Invite & Earn</span>
+    </a>
+    <a href="wallet.html">
+      💼
+      <span>My Wallet</span>
+    </a>
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://whatsapp.com/channel/0029VbAtCWk1noz1igKbQl0a" target="_blank">📲 Join Our WhatsApp Channel</a>
+  </div>
+
+  <div class="logout">
+    <a href="index.html">🚪 Logout</a>
+  </div>
+
+</body>
+</html>

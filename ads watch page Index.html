@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch Ad - Kobearn Platform</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f2f2f2;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #ccc;
+    }
+    .timer {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    .message {
+      margin-top: 15px;
+      font-size: 16px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Watch Ad & Earn</h2>
+    <button onclick="startAd()" id="watchBtn">Watch Ad</button>
+    <div class="timer" id="timer"></div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    function startAd() {
+      const watchBtn = document.getElementById("watchBtn");
+      const timer = document.getElementById("timer");
+      const message = document.getElementById("message");
+
+      watchBtn.disabled = true;
+      message.textContent = "";
+      let timeLeft = 10;
+
+      timer.textContent = `Please wait ${timeLeft} seconds...`;
+
+      const countdown = setInterval(() => {
+        timeLeft--;
+        if (timeLeft > 0) {
+          timer.textContent = `Please wait ${timeLeft} seconds...`;
+        } else {
+          clearInterval(countdown);
+          timer.textContent = "";
+          message.textContent = "Ad watched successfully! You earned PKR 70.";
+          watchBtn.disabled = false;
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch Ad - Kobearn Platform</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f2f2f2;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #ccc;
+    }
+    .timer {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    .message {
+      margin-top: 15px;
+      font-size: 16px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Watch Ad & Earn</h2>
+    <button onclick="startAd()" id="watchBtn">Watch Ad</button>
+    <div class="timer" id="timer"></div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    function startAd() {
+      const watchBtn = document.getElementById("watchBtn");
+      const timer = document.getElementById("timer");
+      const message = document.getElementById("message");
+
+      watchBtn.disabled = true;
+      message.textContent = "";
+      let timeLeft = 10;
+
+      timer.textContent = `Please wait ${timeLeft} seconds...`;
+
+      const countdown = setInterval(() => {
+        timeLeft--;
+        if (timeLeft > 0) {
+          timer.textContent = `Please wait ${timeLeft} seconds...`;
+        } else {
+          clearInterval(countdown);
+          timer.textContent = "";
+          message.textContent = "Ad watched successfully! You earned PKR 70.";
+          watchBtn.disabled = false;
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

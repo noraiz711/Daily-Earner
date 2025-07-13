@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Ads - Daily Earner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00c853;
+      margin-bottom: 25px;
+    }
+
+    .ad-box {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .ad-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .ad-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .ad-content p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .earn-btn {
+      background: #00c853;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .earn-btn:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .message {
+      margin-top: 10px;
+      color: #009845;
+      font-size: 14px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📺 Watch 2 Daily Ads & Earn PKR 70</h2>
+
+  <!-- Ad 1 -->
+  <div class="ad-box">
+    <img src="https://via.placeholder.com/400x180?text=Ad+1" class="ad-image" alt="Ad 1">
+    <div class="ad-content">
+      <p>Sponsored Ad - Earn PKR 35</p>
+      <button class="earn-btn" onclick="earn(this)">✅ Earn Now</button>
+      <div class="message">🎉 You earned PKR 35</div>
+    </div>
+  </div>
+
+  <!-- Ad 2 -->
+  <div class="ad-box">
+    <img src="https://via.placeholder.com/400x180?text=Ad+2" class="ad-image" alt="Ad 2">
+    <div class="ad-content">
+      <p>Sponsored Ad - Earn PKR 35</p>
+      <button class="earn-btn" onclick="earn(this)">✅ Earn Now</button>
+      <div class="message">🎉 You earned PKR 35</div>
+    </div>
+  </div>
+
+  <script>
+    function earn(button) {
+      button.disabled = true;
+      button.textContent = "✅ Earned";
+      const msg = button.nextElementSibling;
+      msg.style.display = "block";
+      // Future: Add balance update logic here
+    }
+  </script>
+
+</body>
+</html>
